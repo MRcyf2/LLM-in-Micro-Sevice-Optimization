@@ -1,0 +1,13 @@
+# bootstrap.yml
+spring:
+  application:
+    name: service-demo
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        namespace: dev
+        group: DEFAULT_GROUP
+  config:
+    import: "nacos:${spring.application.name} " # 关键配置
