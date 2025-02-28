@@ -22,7 +22,7 @@ import java.util.*;
 public class DeepseekClient {
 
     //@Value
-    private static final String apiKey="sk-7287e9b322294da998d78dac23273499";
+    private static final String apiKey="***********************";
 
     private static final String endpoint="https://api.deepseek.com/v1/chat/completions";
 
