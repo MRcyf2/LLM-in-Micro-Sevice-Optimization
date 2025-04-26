@@ -39,7 +39,7 @@ public class DeepseekClient {
     private static final Logger logger = LoggerFactory.getLogger(DeepseekClient.class);
 
     private final Executor asyncExecutor;
-    private String apiKey="sk-d642f05dc6ba4dcdb021b2314a2f99c2";
+    private String apiKey="sk-d642f05dc6*4a2f99c2";
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
