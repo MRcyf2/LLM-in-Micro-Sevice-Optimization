@@ -1,0 +1,23 @@
+# bootstrap.yml
+spring:
+  application:
+    name: service-demo
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        namespace: dev
+        group: DEFAULT_GROUP
+  config:
+    import: "nacos:${spring.application.name} " # 关键配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus  # 按需选择
+  endpoint:
+    health:
+      show-details: always  # 显示详细健康信息
+    prometheus:
+      enabled: true # 开启prometheus监控
